@@ -1,0 +1,48 @@
+import { SVGProps } from 'react';
+import C from './SVG/C.svg';
+import U from './SVG/U.svg';
+import R from './SVG/R.svg';
+import RR from './SVG/RR.svg';
+import UR from './SVG/UR.svg';
+import IR from './SVG/IR.svg';
+import SIR from './SVG/SIR.svg';
+import HR from './SVG/HR.svg';
+import PROMO from './SVG/PROMO.svg';
+
+type RarityIconProps = SVGProps<SVGSVGElement>;
+
+export const CommonIcon = (props: RarityIconProps) => (
+  <C role="img" aria-label="Common Rarity" style={{ color: 'black', fill: 'black' }} {...props} />
+);
+
+export const UncommonIcon = (props: RarityIconProps) => (
+  <U role="img" aria-label="Uncommon Rarity" style={{ color: 'black', fill: 'black' }} {...props} />
+);
+
+export const RareIcon = (props: RarityIconProps) => (
+  <R role="img" aria-label="Rare" style={{ color: 'black', fill: 'black' }} {...props} />
+);
+
+export const DoubleRareIcon = (props: RarityIconProps) => (
+  <RR role="img" aria-label="Double Rare" style={{ color: 'black', fill: 'black' }} {...props} />
+);
+
+export const UltraRareIcon = (props: RarityIconProps) => (
+  <UR role="img" aria-label="Ultra Rare" {...props} />
+);
+
+export const IllustrationRareIcon = (props: RarityIconProps) => (
+  <IR role="img" aria-label="Illustration Rare" {...props} />
+);
+
+export const SpecialIllustrationRareIcon = (props: RarityIconProps) => (
+  <SIR role="img" aria-label="Special Illustration Rare" {...props} />
+);
+
+export const HyperRareIcon = (props: RarityIconProps) => (
+  <HR role="img" aria-label="Hyper Rare" {...props} />
+);
+
+export const SecretRareIcon = (props: RarityIconProps) => (
+  <PROMO role="img" aria-label="Secret Rare" {...props} />
+);
