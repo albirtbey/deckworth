@@ -1,0 +1,150 @@
+Project Overview:
+
+Application Name: PokéTrade Hub (or another name to be determined later)
+Short Description: A comprehensive web application designed for Pokémon TCG collectors and traders, featuring advanced collection management, a secure and gamified P2P (peer-to-peer) trading system, AI-powered market analysis, and accurate card scanning capabilities.
+Primary Objective: To become the leading platform for Pokémon TCG enthusiasts by offering a superior user experience, robust features, and a strong community.
+Target Platforms: web application and mobile portability  (
+II. Core Modules and Features:
+
+**A. User Account Management:**
+    * Registration (Email/Password, Social Login - Google/Apple)
+* User Profile (Avatar, Username, Biography, Collection Summary, Trade History, Reputation Score, Wish List, Trade Folder visibility)
+    *   Identity Verification and Security (Two-Factor Authentication option)
+    *   Settings (Notification preferences, Privacy settings, Linked accounts)
+
+**B. Collection Management Module:**
+*   **Pokémon TCG Card Database:**
+        * Comprehensive: All sets (English, Japanese, Chinese), promotional cards, variants (Reverse Holo, 1st Edition, Shadowless, etc.) [2, 3]
+* Regularly updated with new releases.
+        * Detailed Card Information: High-resolution images (front/back), set, rarity, artist, Pokémon data, market values (from multiple sources), price history.
+* **Card Scanner (AI-powered):**
+* Accurate identification of the card, set, language, and edition. [4]
+        * AI-powered condition assessment (corners, scratches, centering - Ximilar can be referenced).[4]
+* Ability to recognize various lighting and backgrounds, graded card sleeves (slabs).[5]
+* **Manual Card Entry:** Searchable database for manual additions.
+    * **Collection Tracking:**
+* Tracking of quantity, condition (Mint, Near Mint, Played, etc.), grade (PSA, Beckett, etc.), purchase price/date.
+        * Customizable folders/albums/lists (e.g., “Trade Folder,” “Valuable Holograms,” “Complete Sets”).[2, 3]
+* Rule-based “Smart Folders” (e.g., “All Charizards valued >$50”).[2]
+* **Portfolio Valuation:**
+        * Real-time valuation of the collection and individual cards.
+* Data from multiple sources (TCGPlayer, eBay sales, Cardmarket).[2, 6, 7, 8]
+* Historical value tracking and trend graphs.[3, 9]
+    *   **Wishlist Functionality:** Add desired cards, specify desired condition/language.[3, 10, 11]
+*   **(Optional for MVP) Deck Builder:** Format validation, import/export (PTCGLive).[3]
+
+**C. P2P Trading System Module (Physical Cards):**
+*   **Listing Cards for Trading/Selling:**
+*   Select from collection (automatically fills in details).
+        *   Specify quantity, acceptable trade conditions (wish list items, cash offers, specific cards).
+*   Set “Buy Now” price or minimum trade value.
+*   Upload/select high-quality card images.
+*   **Trading Market and Search:**
+*   Dedicated section to browse listings.
+        * Advanced Search Filters: Card name, set, Pokémon, type, rarity, language, condition, seller reputation, seller's search criteria.[12, 13]
+* **Offer and Negotiation System:**
+* Make offers using +/- virtual currency/cash equivalent with cards in the collection.
+        * In-app messaging for negotiation (secure, recorded).[14, 15, 16]
+* Counter-offer functionality.
+* Accept/reject offers.
+* Offer validity period timers.
+* **Trade Security and Completion:**
+        * User Verification (Email required; tiered verification for high-value traders - phone, ID).[17]
+* Escrow System (For payments or high-value card swaps).[17]
+* Shipping/Tracking Integration (optional).
+* Delivery and condition approval by both parties.
+        * Reputation System: Post-trade rating and feedback.[17]
+* Dispute Resolution Mechanism (moderated).[17]
+
+**D. Gamification Module:**
+*   **Point System:** For adding cards, completing sets, successful trades, daily logins, and completing tasks.[18, 19, 20, 21, 22]
+    *   **Badges/Achievements:** “First Trade,” “Set Master,” “Best Trader,” “Charizard Collector,” etc.[18, 21, 22]
+    *   **Levels (Collector and Trader):** Progress based on points/achievements, unlocking advantages or cosmetic profile items.[3]
+    *   **Daily/Weekly Tasks and Challenges:** “List 3 new cards for trade,” “Complete a trade for a card from your wish list,” “Scan 10 cards.”[18, 22]
+    *   **Leaderboards (Optional):** Top collectors (based on value/completion), top traders (based on volume/rating).[18, 21, 22]
+    *   **Virtual Currency (Optional):** Earned through activities, usable for cosmetic IAPs or trade enhancers.
+
+**E. AI-Powered Features Module:**
+*   **Personalized Market Notifications:**
+        *   Data Sources: User data (collection, wishlist, activity), external market data (eBay, TCGPlayer, Cardmarket APIs), social sentiment (optional).[6, 23, 7, 8, 24, 25, 26, 27]
+        * AI Models: Time series (Holt-Winters for price trends [9]), regression, anomaly detection, NLP for sentiment.[24, 28, 29, 30, 31, 25, 32]
+        * For Notifications: Price drops on cards in the wishlist, value increases in the collection, popular/trending sets/cards related to the user.[25, 26]
+* **AI Card Recognition and Condition Assessment:** (Integrated into the browser - see B)
+
+**F. Community and Social Module:**
+    *   Friends System: Add friends, view profiles/trade folders/wish lists.[2, 3]  
+    *   (MVP+) In-App Forums/Discussion Boards: For specific sets, trading strategies, news.[33, 1]
+    * (MVP+) Direct Messaging (beyond trade negotiations).
+
+**G. Money-Making Module:**
+* **Affiliate Integration:**
+* Contextual links to eBay, TCGPlayer, Cardmarket, Amazon for purchasing cards. [6, 9, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+        *   Display affiliate links on card detail pages or when a user cannot find a trade.
+*   **Subscription Model (Premium Tiered Freemium):** [53, 54, 55, 56, 57, 58]
+        *   **Free Tier:** Basic collection management (limited cards/scanning), limited trading, general market information, ads.
+*   **Premium Tier(s) (e.g., “Collector,” “Trader Pro”):**
+*   Unlimited collection/scanning, advanced portfolio analysis.
+            * Fully AI-powered personalized notifications and market analysis.
+* AI condition assessment.
+* Advanced trading features (more listings, priority, lower fees if available).
+* Custom gamification rewards/cosmetics.
+* Ad-free experience.
+* Priority support.
+    * **(Optional) In-App Purchases (IAP):** [59, 60, 58]
+* Cosmetic items (profile themes, badges).
+* Temporary trading boosters (listing promotion).
+III. User Interface (UI) / User Experience (UX) Design:
+* Clean, modern, and intuitive design.
+* Easy navigation, especially for basic tasks (adding cards, listing, searching, trading).
+* Visually appealing presentation of cards and collection data.
+* Responsive design for various screen sizes.
+* Clear calls to action (CTAs).
+* Onboarding flow for new users. 
+
+
+
+IV. Technical Specifications:
+* Backend:
+* Framework: (Python/Django or Node.js/Express is recommended for a balance of rapid development, security, and AI integration capabilities).
+* Database: (PostgreSQL for structured data such as user accounts/transactions, with potential for NoSQL such as MongoDB for card catalog/AI data if needed—or a powerful managed NoSQL such as DynamoDB/Firestore).
+* Cloud Hosting: AWS, GCP, or Azure (choose based on AI/ML service power, database management, and scalability needs).
+* APIs: RESTful or GraphQL for client-server communication. Secure and versioned.
+* Mobile App:
+* Native (Swift for iOS, Kotlin for Android) or Cross-Platform (Flutter or React Native).
+* Core Integrations:
+* Payment Gateway (if direct sales or escrow cash are involved).
+* Market Data APIs (eBay, TCGPlayer, Cardmarket - manage rate limits and data caching).
+* AI Service APIs (e.g., Ximilar or custom models for card scanning/condition).
+* Push Notification Service (Firebase Cloud Messaging, Apple Push Notification service).
+* Security:
+* HTTPS for all communications.
+* Encryption of data at rest and in transit.
+* Secure user authentication (OAuth 2.0, JWT).
+* Protection against common security vulnerabilities (OWASP Top 10).
+* GDPR/CCPA compliance (data access, deletion, consent management).
+* Performance:
+* Fast loading times, low latency for real-time features (commerce, notifications).
+* Efficient database queries and indexing.
+* Image optimization.
+* Caching strategies for frequently accessed data. 
+
+V. MVP (Minimum Viable Product) Scope:
+* Must-haves (using MoSCoW):
+* User Registration and Basic Profile.
+* Manual Card Entry and Basic Collection Management (basic Pokémon TCG sets).
+* Accurate Card Scanner (Phase 1: Basic Identification).
+* Basic Portfolio Valuation (link to a primary market source).
+* Simple Trade Listing (list cards, specify requests).
+* Trade Search (browse listings, basic filters).
+* In-App Messaging for Trade Negotiations.
+* Basic Bidding System (make offers on cards, accept/reject).
+* Post-Trade User Feedback/Rating.
+* Should be included (if resources allow for a stronger MVP):
+* Wishlist functionality.
+* More detailed card condition tracking.
+* Will not be included (for MVP): Advanced AI (price trends, condition assessment beyond basic scanning), full gamification, escrow, other TCGs. 
+
+VI. Development Process:
+* Agile methodology with sprints.
+* Regular structures and tests.
+* Beta testing phase before full launch. 
